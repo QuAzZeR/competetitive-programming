@@ -7,7 +7,6 @@ class Solution:
         for i in dimensions:
             diagonal = sqrt(i[0]**2+i[1]**2)
             area = i[0]*i[1]
-            print(m, diagonal, m_area, area)
             if m < diagonal:
                 m = diagonal
                 m_area = area
