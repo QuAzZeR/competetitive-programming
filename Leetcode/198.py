@@ -8,8 +8,7 @@ class Solution:
             for j in range(i-1):
                 m = max(m, max_rob[j] + max_rob[i])
             max_rob[i] = max([m, max_rob[i], max_rob[i-1]])
-            print(i, max_rob)
-        print(max_rob)
+
         return max_rob[-1]
 
 print(Solution().rob([1,2,3,1]))

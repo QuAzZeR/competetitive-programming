@@ -10,7 +10,7 @@ class Solution:
             d[box] += 1
             if d[box] > answer:
                 answer = d[box]
-        print(d)
+
         return answer
 
 print(Solution().countBalls(1,10))
