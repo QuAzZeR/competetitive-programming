@@ -9,13 +9,11 @@ class Solution:
         tm = 0
         tp = 0
         tg = 0
-        print("i", "m", "p", "g", "tm", "tp", "tg")
         for i in range(len(garbage)):
             if i >= 1:
                 tm += travel[i - 1]
                 tp += travel[i - 1]
                 tg += travel[i - 1]
-                print(">>>", tm, tp, tg)
                 if "M" in garbage[i]:
                     m += tm
                     tm = 0
@@ -29,7 +27,6 @@ class Solution:
             m += garbage[i].count("M")
             p += garbage[i].count("P")
             g += garbage[i].count("G")
-            print(i, m, p, g, tm, tp, tg)
         return m + p + g
 
 
