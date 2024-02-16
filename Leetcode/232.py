@@ -1,5 +1,4 @@
 class MyQueue:
-
     def __init__(self):
         self.s1 = []
 
@@ -7,8 +6,6 @@ class MyQueue:
         self.s1.reverse()
         self.s1.append(x)
         self.s1.reverse()
-        print(self.s1)
-
 
     def pop(self) -> int:
         return self.s1.pop()

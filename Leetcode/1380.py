@@ -11,7 +11,6 @@ class Solution:
             for j in range(m):
                 current = matrix[i][j]
                 m_column = max([matrix[k][j] for k in range(n)])
-                print(current, m_row, m_column)
                 if m_row == current and current == m_column:
                     answer.append(current)
         return answer
