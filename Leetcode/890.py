@@ -11,7 +11,6 @@ class Solution:
             for i in range(len(word)):
                 c = word[i]
                 p = pattern[i]
-                print(m, reverse_m)
                 if p in reverse_m:
                     if reverse_m[p] != c:
                         is_pattern = False
