@@ -14,7 +14,6 @@ class Solution:
             if c < operation:
                 operation = c
 
-            print(i, i - 1, k // i, c, operation)
         return operation
 
 
