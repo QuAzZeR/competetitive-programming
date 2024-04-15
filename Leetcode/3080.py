@@ -13,7 +13,6 @@ class Solution:
         )
         j = 0
         for i, k in queries:
-            print(masked)
             if i not in masked:
                 s -= nums[i]
                 masked[i] = 1
@@ -23,7 +22,6 @@ class Solution:
                 break
             c = 0
             while j < len_nums:
-                print(j)
                 if new_nums[j][1] in masked:
                     j += 1
                     continue
@@ -35,7 +33,6 @@ class Solution:
                 j += 1
 
             answer.append(s)
-        print(">>>", masked)
         return answer + [0] * (len(queries) - len(answer))
 
 

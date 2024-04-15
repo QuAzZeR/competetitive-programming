@@ -18,7 +18,6 @@ class Solution:
                 return
             if node.left is None and node.right is None:
                 self.answer += int(current + str(node.val))
-                print(self.answer, current)
                 return
             dfs(node.left, current + str(node.val))
             dfs(node.right, current + str(node.val))
