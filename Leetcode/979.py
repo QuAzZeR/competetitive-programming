@@ -14,7 +14,7 @@ class Solution:
         def dfs(node, parent):
             if node is None:
                 return 0
-            move = dfs(node.left, root) + dfs(node.right, root)
+            move = dfs(node.left, node) + dfs(node.right, node)
             x = node.val - 1
             if parent is not None:
                 parent.val += x
