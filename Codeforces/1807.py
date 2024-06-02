@@ -8,6 +8,11 @@ def i_map():
 
 def solve():
     answer = 0
+    a, b, c = i_map()
+    if a + b == c:
+        return "+"
+    if a - b == c:
+        return "-"
     return answer
 
 

@@ -8,7 +8,10 @@ def i_map():
 
 def solve():
     answer = 0
-    return answer
+    x = input()
+    if x in "codeforces":
+        return "Yes"
+    return "No"
 
 
 t = i_in()
