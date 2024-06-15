@@ -13,7 +13,6 @@ class Solution:
 
         n_space = space // (n - 1)
         answer = ""
-        print(words, n, space, n_space, (space - (n_space * (n - 1))))
         for i in range(n):
             answer += words[i]
             if i != n - 1:
