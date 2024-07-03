@@ -4,7 +4,6 @@ import unittest
 
 class Solution:
     def semiOrderedPermutation(self, nums: List[int]) -> int:
-        x = 0
         n = len(nums)
         if nums[0] == 1 and nums[n - 1] == n:
             return 0
