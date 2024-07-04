@@ -7,7 +7,7 @@ class Solution:
         n = len(nums)
         if n <= 4:
             return 0
-        nums.sort(reverse=True)
+        nums.sort()
         k = len(nums) - 3
         answer = nums[-1] - nums[0]
         for i in range(k - 1, n):
