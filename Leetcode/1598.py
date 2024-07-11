@@ -13,7 +13,6 @@ class Solution:
                     s.pop()
             else:
                 s.append(i)
-            print(i, s)
         return len(s)
 
 
