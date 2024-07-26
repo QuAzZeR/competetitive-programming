@@ -10,7 +10,6 @@ class Solution:
         }
         for i in nums:
             answer.append((int(''.join([m[j] for j  in str(i)])),i))
-        print(answer)
         answer.sort(key=lambda x: x[0])
         return [i[1] for i in answer]
 
