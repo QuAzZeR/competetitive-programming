@@ -4,7 +4,6 @@ import unittest
 
 class Solution:
     def stoneGameII(self, piles: List[int]) -> int:
-        answer = 0
         n = len(piles)
         dp = [[0] * (n+1) for _ in range(n+1)]
         suffixSum = [0] * (n+1)
